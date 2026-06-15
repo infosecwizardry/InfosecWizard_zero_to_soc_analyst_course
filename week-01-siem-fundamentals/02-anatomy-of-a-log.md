@@ -4,16 +4,14 @@ A log is just a record of something that happened, with a timestamp. Once you ca
 
 ## 📺 Watch the Video
 
-🎥 [Coming soon — link will be added once the episode publishes]
+[![Watch on YouTube](https://img.youtube.com/vi/tvWzYVuL_34/maxresdefault.jpg)](https://youtu.be/tvWzYVuL_34)
 
-## 🎯 Learning Objectives
+## 🎯 What You'll Walk Away With
 
-By the end of this section, you'll be able to:
-
-- Identify the four universal parts of any log entry
-- Read logs from different systems (Windows, Linux, web servers) using the same mental framework
-- Recognize the difference between structured and unstructured logs
-- Pull useful information out of raw log data without being intimidated by it
+- Identifying the four universal parts of any log entry
+- Reading logs from Windows, Linux, and web servers using the same mental framework
+- Spotting the difference between structured and unstructured logs
+- Pulling useful information out of raw log data without being intimidated by it
 
 ---
 
@@ -31,10 +29,10 @@ In security, those events come from servers, endpoints, firewalls, applications,
 
 Every log entry, no matter where it came from, has roughly four parts:
 
-1. **Timestamp** — when it happened
-2. **Source** — where it came from (which system, application, or device)
-3. **Event type** — what kind of event it is (a login, a network connection, a file write, an error)
-4. **Fields** — the specific details (who did it, from where, with what)
+1. **Timestamp:** when it happened
+2. **Source:** where it came from (which system, application, or device)
+3. **Event type:** what kind of event it is (a login, a network connection, a file write, an error)
+4. **Fields:** the specific details (who did it, from where, with what)
 
 This framework holds whether you're looking at a Windows event, a web server log, a firewall log, a cloud audit log, or anything else. Once you can spot the four parts, you can read any log.
 
@@ -146,11 +144,11 @@ Mar 15 22:47:33 webserver01 sshd[8432]: Accepted password for admin from 198.51.
 
 For each log entry, identify:
 
-1. **The timestamp** — when it happened
-2. **The source** — what system or application produced it
-3. **The event type** — what happened
-4. **At least three fields** — specific details visible in the entry
-5. **Your read** — does this look normal, suspicious, or in between? Why?
+1. **The timestamp:** when it happened
+2. **The source:** what system or application produced it
+3. **The event type:** what happened
+4. **At least three fields:** specific details visible in the entry
+5. **Your read:** does this look normal, suspicious, or in between? Why?
 
 ### Share Your Work
 
