@@ -1,19 +1,17 @@
-# Episode 1: What Is a SIEM and Why Do We Use One?
+# What Is a SIEM and Why Do We Use One?
 
-Welcome to Episode 1 of Zero to SOC Analyst. This is the foundation. Everything in the next seven weeks builds on what you learn here.
+A SIEM is the central place where all your logs land. This section covers what it is, the four things it gives you, and why no SOC works without one.
 
 ## 📺 Watch the Video
 
-🎥 https://youtu.be/ctLU2CCLMqo
+[![Watch on YouTube](https://img.youtube.com/vi/ctLU2CCLMqo/maxresdefault.jpg)](https://youtu.be/ctLU2CCLMqo)
 
-## 🎯 Learning Objectives
+## 🎯 What You'll Walk Away With
 
-By the end of this section, you'll be able to:
-
-- Explain what a SIEM is and what problem it solves
-- Identify the four core benefits a SIEM provides
-- Recognize the difference between investigating with and without a SIEM
-- Answer the most common SOC analyst interview question: "What is a SIEM?"
+- Knowing what a SIEM is and the problem it solves
+- Being able to name the four pillars of what a SIEM gives you
+- Spotting the difference between investigating with and without one
+- Being able to answer "What is a SIEM?" the way a SOC interviewer wants to hear it
 
 ---
 
@@ -83,7 +81,7 @@ For an analyst, this is huge. The SIEM isn't just convenient. It's often the onl
 
 Throughout Zero to SOC Analyst, we're going to use **Elastic** (also known as the ELK Stack) as our SIEM. You're welcome to follow along with Splunk if you prefer. Both are industry standard, and the core skills transfer cleanly between them.
 
-This week is dedicated to one thing: getting you fluent in the SIEM itself. Searching, filtering, pivoting, dashboards. The next seven weeks all assume you can do this.
+This week is dedicated to one thing: getting you fluent in the SIEM itself. Searching, filtering, pivoting, dashboards. The rest of the course assumes you can do this.
 
 ---
 
@@ -136,6 +134,6 @@ That's the difference. That's why this job needs a SIEM.
 
 ## ➡️ What's Next
 
-Now that you know what a SIEM is and why it exists, the next step is understanding what's actually inside it. That means logs. In Episode 2: Anatomy of a Log, we'll break down what a log entry actually contains, how to read one, and why structured logs are an analyst's best friend.
+Now that you know what a SIEM is and why it exists, the next step is understanding what's actually inside it. That means logs, and how to read them.
 
-[← Back to Week 1 Overview](./README.md) | [Next: Anatomy of a Log →](./02-anatomy-of-a-log.md)
+[← Back to Week 1 Overview](./README.md) | [Next →](./02-anatomy-of-a-log.md)
