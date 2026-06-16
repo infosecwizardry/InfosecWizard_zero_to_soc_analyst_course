@@ -2,6 +2,10 @@
 
 What the Elastic Stack actually is, how your logs get into it, and where you sit as the analyst who searches it.
 
+## 📺 Watch the Video
+ 
+[![Watch on YouTube](https://img.youtube.com/vi/Uqv6zjwMBec/maxresdefault.jpg)](https://youtu.be/Uqv6zjwMBec)
+
 ---
 
 ## Lesson Notes
