@@ -8,6 +8,8 @@ What the Elastic Stack actually is, how your logs get into it, and where you sit
 
 ### The pieces
 
+![The Elastic Stack: shippers and pipelines feed Elasticsearch, the engine, and Kibana is the window](./images/ep3-01-the-stack.png)
+
 Three parts. Two you work with directly, one that runs in the background.
 
 - **Elasticsearch** is the engine. It stores your logs and indexes them so you can search across a huge amount of data and get an answer back fast. In a real company it is not one server, it is a cluster of machines splitting the data between them. You ask a question, the cluster brings back the matches. You query, you don't download.
@@ -16,15 +18,21 @@ Three parts. Two you work with directly, one that runs in the background.
 
 ### How data gets in, and why it looks consistent
 
+![Mismatched logs from Windows, firewall, and cloud get normalized into common fields](./images/ep3-02-normalization.png)
+
 Every source writes logs differently. Windows one way, the firewall another, the cloud another. On the way in, the data gets parsed and normalized onto a common set of field names, so the source IP from a firewall and the source IP from a laptop land in the same field. Learn one set of field names and you can search the whole environment at once.
 
 Not every company does this well. A mature shop has it dialed in. Smaller or fast-growing places are still figuring it out, so you will run into messy, inconsistent, or missing fields. That is a read on the environment's maturity, not on you.
 
 ### Where it lives, and how it ages out
 
+![Retention tiers from hot to warm to cold to frozen to deleted as data ages](./images/ep3-03-retention-tiers.png)
+
 Data is stored by time and moves through tiers as it ages. Fresh data sits on fast storage and answers instantly. Older data slides onto slower storage, then gets frozen or archived, and past the retention policy it is gone. Pull logs from six months or a year back and the results come back patchy: some there, some gone. That is retention showing its limits, not you searching wrong.
 
 ### Where you sit
+
+![The full flow with you the analyst at Kibana and engineering at the cluster](./images/ep3-04-where-you-sit.png)
 
 You don't run the stack. Standing it up, tuning the pipelines, and managing retention is engineering, and you may never touch it unless you move into the specialty side (SIEM engineering, security engineering, or the log and pipeline role). You don't have to build any of it, but you do have to understand how it works, because it changes how you search. The further back you reach, the more the cluster has to dig through and the slower it gets. That is why writing tight queries matters later: your job is to sift an absurd amount of data and get to the answer fast. An inefficient query takes forever, falls over, or buries you in rows you can't act on.
 
