@@ -1,0 +1,92 @@
+# Load the Course Dataset Into Kibana
+
+The companion to the setup video. This is a one-time thing. Do it once, and every lab in the course runs against the exact same logs you see here, so your answers can actually be checked against everyone else's.
+
+## 📺 Watch the Video
+
+🎥 [Coming soon — link will be added once the video publishes]
+
+## 🎯 What You'll Walk Away With
+
+- The course dataset loaded into your own Kibana, no Logstash or Filebeat required
+- A data view named `soc-lab` that every lab points at
+- Knowing why your time picker has to cover the data, or you'll see nothing
+
+---
+
+## Step 1: Get the file
+
+Download the dataset from this repo:
+
+[soc-lab-dataset.ndjson](./soc-lab-dataset.ndjson)
+
+It's a small NDJSON file, 500 log records. Save it somewhere you can find it.
+
+## Step 2: Open the file uploader
+
+In Kibana, open the menu (top left) and go to **Machine Learning → Data Visualizer**, then click **Upload a file**. (Depending on your version you can also reach it from the **Add data** screen, "Upload a file.")
+
+Drag the `.ndjson` file onto the page, or browse to it.
+
+## Step 3: Review what Kibana found
+
+Kibana reads the file and shows you a summary of the fields it detected. You don't need to change anything. Just confirm two things:
+
+- The format is recognized as **NDJSON**
+- The **time field** is set to `@timestamp`
+
+If `@timestamp` is picked as the time field, you're good.
+
+## Step 4: Import
+
+Click **Import**. Choose the index name:
+
+```
+soc-lab
+```
+
+Leave the rest on defaults and let it run. When it finishes, make sure the option to **create a data view** is selected (also name it `soc-lab` if asked). That's the thing every lab will search.
+
+## Step 5: Set your time range (this is the one that trips people up)
+
+Open **Discover** and select the `soc-lab` data view. You will probably see zero results. That's expected. The logs in this file are dated, and your time picker defaults to the last 15 minutes.
+
+Set the time picker to an **absolute range** that covers the data:
+
+```
+June 8, 2026 00:00  →  June 11, 2026 00:00
+```
+
+Now you should see logs. If you ever open a lab and the screen is empty, check the time picker first. It's almost always the time picker.
+
+---
+
+## 🧪 Verify You Loaded It Right
+
+Run these two searches in Discover with the time range set as above. You should get the numbers below. If you do, you're set for every lab in the course.
+
+- [ ] `event.dataset:system.auth` returns **192** documents
+- [ ] `event.dataset:system.syslog` returns **308** documents
+
+Total across both: 500.
+
+### Share
+
+Post in the [Apprentice Discord](https://discord.gg/XjHJFp4KSm) setup thread once you've got both numbers. If your counts are off, say so in there and we'll sort it out.
+
+---
+
+## 🔑 Key Takeaways
+
+- Kibana's file uploader ingests CSV, NDJSON, and log files straight from the UI. No pipeline to build.
+- The course dataset lives in one index, `soc-lab`, with a data view of the same name.
+- The data is dated. Set the time picker to cover it or Discover looks empty.
+- Same logs for everyone means the labs have real, checkable answers.
+
+---
+
+## ➡️ What's Next
+
+You've got the data. From here, the labs assume this `soc-lab` data view is loaded and your time range covers the data window. Anytime a lab says "search the course dataset," this is what it means.
+
+[← Back to Start Here](./course-roadmap.md)
