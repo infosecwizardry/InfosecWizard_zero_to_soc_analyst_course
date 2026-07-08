@@ -1,0 +1,72 @@
+# A Tour of Windows Event Logs
+
+The companion file for the video. This is the map, not the lecture. The reasoning lives on camera. This page is here to scan and come back to.
+
+No lab this time. It's the overview. Hands-on work starts when we take each category apart on its own.
+
+---
+
+## The idea
+
+Event Viewer feels like a firehose. Screen after screen, mostly noise, no obvious place to start.
+
+You don't memorize it. Almost everything worth reading is one of a small set of activities. Learn to spot which one you're looking at and the pile starts to sort itself.
+
+---
+
+## Channels: how Windows files its logs
+
+- **Security:** logons, account changes, privilege use. Where you'll spend most of your time.
+- **System:** services, drivers, reboots.
+- **Application:** software writing its own logs.
+- **PowerShell:** PowerShell activity (`Microsoft-Windows-PowerShell/Operational`).
+- **Sysmon:** richer detail once it's installed (`Microsoft-Windows-Sysmon/Operational`).
+
+Knowing the drawers isn't the same as knowing what to read. So organize by what happened, not by which drawer it landed in.
+
+---
+
+## The map: seven kinds of activity
+
+Each one becomes its own deep dive.
+
+| # | Activity | What it logs | Why we care |
+|---|----------|--------------|-------------|
+| 1 | Someone logged in | Who signed in, from where, and how | Trace a user across their whole life on the network. |
+| 2 | A program ran | What ran, its command line, and what launched it | See what's running on a system and whether it's tied to anything malicious. |
+| 3 | Someone ran PowerShell | The commands that were run | Attackers lean on PowerShell for its reach. This is where you see everything they ran. |
+| 4 | Something talked to the network | A process and the connections it made | Watch how processes reach other systems on the network or out to the internet. |
+| 5 | An account or group changed | Accounts created or deleted, resets, group membership | A common persistence move. Watch for the account nobody asked for. |
+| 6 | Something set up to stick around | Scheduled tasks and services | Persistence. Spot the task or service planted to survive a reboot. |
+| 7 | Files or settings changed | Files written, registry keys set | Malware staging a payload or wiring itself into a startup key. USB surfaces here too. |
+
+Seven kinds of activity, not a thousand IDs to memorize.
+
+---
+
+## The mindset: normal before weird
+
+You can't spot suspicious until you know boring.
+
+Every row above is mostly ordinary traffic. People log in every morning. Programs run all day. Accounts get created with every new hire. Hunt for bad without knowing normal and you either chase everything or miss the one that counts.
+
+So every deep dive goes the same way: what this looks like when nothing's wrong, then what makes you look twice.
+
+---
+
+## One thing before you go looking
+
+Windows doesn't log the good stuff by default. The full command line of a program, for example, is off until someone turns it on. What you can see depends on how the place was set up before you got there. First question in a new job: what can I even see here?
+
+**Sysmon** is the free add-on that fixes a lot of that. It records the same activity with more detail, including network connections tied back to the process that made them. As we go, you'll see the plain Windows event first, then the sharper Sysmon version.
+
+---
+
+## Next
+
+Pick any row and that's a deep dive waiting. Each starts with normal, then moves to what stands out.
+
+- Free Zero to SOC Analyst course: https://www.youtube.com/playlist?list=PLCA_oueymC_WElNXo-vGxKvoa0Bh4NC2b
+- Questions as you work through it: https://discord.gg/XjHJFp4KSm
+
+_Lab environment only. Never run any of this on production-adjacent networks._
