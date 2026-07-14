@@ -81,7 +81,7 @@ For an analyst, this is huge. The SIEM isn't just convenient. It's often the onl
 
 Throughout Zero to SOC Analyst, we're going to use **Elastic** (also known as the ELK Stack) as our SIEM. You're welcome to follow along with Splunk if you prefer. Both are industry standard, and the core skills transfer cleanly between them.
 
-This week is dedicated to one thing: getting you fluent in the SIEM itself. Searching, filtering, pivoting, dashboards. The rest of the course assumes you can do this.
+This section is dedicated to one thing: getting you fluent in the SIEM itself. Searching, filtering, pivoting, dashboards. The rest of the course assumes you can do this.
 
 ---
 
@@ -136,4 +136,4 @@ That's the difference. That's why this job needs a SIEM.
 
 Now that you know what a SIEM is and why it exists, the next step is understanding what's actually inside it. That means logs, and how to read them.
 
-[← Back to Week 1 Overview](./README.md) | [Next →](./02-anatomy-of-a-log.md)
+[← Back to Section 1 Overview](./README.md) | [Next →](./02-anatomy-of-a-log.md)

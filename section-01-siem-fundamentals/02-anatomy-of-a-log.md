@@ -169,4 +169,4 @@ Post your breakdown in the [Apprentice Discord](https://discord.gg/XjHJFp4KSm) o
 
 Now that you can read a log, the next step is understanding the system that stores and lets you search through millions of them at once.
 
-[← Back to Week 1 Overview](./README.md) | [Next →](./03-the-elastic-stack.md)
+[← Back to Section 1 Overview](./README.md) | [Next →](./03-the-elastic-stack.md)

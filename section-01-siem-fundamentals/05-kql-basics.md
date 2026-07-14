@@ -113,4 +113,4 @@ Post in the [Apprentice Discord](https://discord.gg/XjHJFp4KSm) thread for this 
 
 You can now ask the data any question you want. The next step is keeping the questions you'll ask again, so you're not retyping them every shift, and turning them into a view you can watch at a glance.
 
-[← Back to Week 1 Overview](./README.md) | [Next →](./06-saved-searches-and-dashboards.md)
+[← Back to Section 1 Overview](./README.md) | [Next →](./06-saved-searches-and-dashboards.md)

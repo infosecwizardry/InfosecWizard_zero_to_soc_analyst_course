@@ -36,7 +36,7 @@ Same order as the video.
 
 Hamburger menu (top left) → Discover.
 
-The nav menu has a lot of options. Only two matter right now: **Discover** and **Dashboard**. Ignore the rest for this week.
+The nav menu has a lot of options. Only two matter right now: **Discover** and **Dashboard**. Ignore the rest for this section.
 
 ### 1. Data View Selector (top left)
 
@@ -118,4 +118,4 @@ Post in the [Apprentice Discord](https://discord.gg/XjHJFp4KSm) thread for this 
 
 You can navigate Discover. The next step is learning the language Kibana uses to search through your logs, so you can ask any question you want.
 
-[← Back to Week 1 Overview](./README.md) | [Next →](./05-kql-basics.md)
+[← Back to Section 1 Overview](./README.md) | [Next →](./05-kql-basics.md)

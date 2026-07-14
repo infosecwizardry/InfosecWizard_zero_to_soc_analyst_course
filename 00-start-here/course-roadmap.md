@@ -20,23 +20,23 @@ The course runs for 8 weeks. Each week, new content drops on YouTube and the mat
 Every week includes:
 
 - **One or more video lessons** that teach the concept and walk through the tools
-- **At least one lab** (some weeks have more) in the matching `week-XX-topic/lab.md` file so you actually apply what you learned
+- **At least one lab** (some weeks have more) in the matching `section-XX-topic/lab.md` file so you actually apply what you learned
 - **A resources list** in `resources.md` for further reading and tool references
 - **Roaming office hours** in the Apprentice Discord. Drop in to work through tough questions live. Keep an eye on the Discord for the next session.
 
-Budget about 4-6 hours per week. One to watch, one to take notes, two to three to do the lab and explore further. Week 8 is heavier because it's the capstone.
+Budget about 4-6 hours per week. One to watch, one to take notes, two to three to do the lab and explore further. Section 8 is heavier because it's the capstone.
 
 ## Why This Sequence
 
-The order is deliberate. Week 1 builds the muscle (SIEM fluency) that every later week leans on. Weeks 2-6 walk through the data sources and attack patterns a working analyst sees every day, starting with the most common (Windows logs) and stepping through the most common attack categories. Week 7 flips the lens from consuming detections to writing them, which is the seniority jump most courses skip entirely. Week 8 forces you to synthesize all of it in a capstone investigation that doubles as a portfolio piece for job applications.
+The order is deliberate. Section 1 builds the muscle (SIEM fluency) that every later section leans on. Sections 2-6 walk through the data sources and attack patterns a working analyst sees every day, starting with the most common (Windows logs) and stepping through the most common attack categories. Section 7 flips the lens from consuming detections to writing them, which is the seniority jump most courses skip entirely. Section 8 forces you to synthesize all of it in a capstone investigation that doubles as a portfolio piece for job applications.
 
-Don't skip ahead. Each week assumes the one before it.
+Don't skip ahead. Each section assumes the one before it.
 
-## Week-by-Week Breakdown
+## Section-by-Section Breakdown
 
-### Week 1: SIEM Fundamentals
+### Section 1: SIEM Fundamentals
 
-**Why it matters:** A SIEM is where you'll spend most of your day. Everything else in this course assumes you can search, filter, and pivot through data fluently. Get this week right and the next seven are dramatically easier.
+**Why it matters:** A SIEM is where you'll spend most of your day. Everything else in this course assumes you can search, filter, and pivot through data fluently. Get this section right and the next seven are dramatically easier.
 
 **What you'll be able to do:**
 - Get fluent in your SIEM and stop second-guessing where to click
@@ -49,7 +49,7 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Our tool of choice:** This course will focus on **Elastic (ELK Stack)**, but if you'd rather use Splunk, you're free to do so. Both are industry standard, and the core skills (writing searches, filtering, pivoting, building dashboards) transfer cleanly between them. The labs are built around Elastic, but the concepts apply either way.
 
-### Week 2: Windows Logs
+### Section 2: Windows Logs
 
 **Why it matters:** Windows is the most common endpoint in enterprises, which means Windows event logs are the most common thing you'll be reading. Knowing the key event IDs cold is non-negotiable.
 
@@ -61,9 +61,9 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Walk through a Windows incident using event logs in your SIEM.
 
-### Week 3: Phishing Investigations and Attack Chains
+### Section 3: Phishing Investigations and Attack Chains
 
-**Why it matters:** Phishing is the #1 initial access vector. The majority of SOC tickets start with someone clicking something they shouldn't have. This week teaches you how to handle the most common ticket type you'll ever see.
+**Why it matters:** Phishing is the #1 initial access vector. The majority of SOC tickets start with someone clicking something they shouldn't have. This section teaches you how to handle the most common ticket type you'll ever see.
 
 **What you'll be able to do:**
 - Analyze email headers and extract IOCs
@@ -73,9 +73,9 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Investigate a phishing email from raw headers through to post-compromise activity.
 
-### Week 4: Authentication Attacks
+### Section 4: Authentication Attacks
 
-**Why it matters:** Identity is the new perimeter. Active Directory attacks are everywhere, and most analysts can't tell Kerberoasting from a brute force attempt. After this week, you can.
+**Why it matters:** Identity is the new perimeter. Active Directory attacks are everywhere, and most analysts can't tell Kerberoasting from a brute force attempt. After this section, you can.
 
 **What you'll be able to do:**
 - Spot brute force and password spraying patterns in logs
@@ -85,7 +85,7 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Detect a Kerberos-based attack in real log data.
 
-### Week 5: Malicious PowerShell Analysis
+### Section 5: Malicious PowerShell Analysis
 
 **Why it matters:** PowerShell is the attacker's tool of choice on Windows. If you can't read obfuscated PowerShell, half your incidents will go unsolved.
 
@@ -97,9 +97,9 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Decode and analyze a malicious PowerShell payload.
 
-### Week 6: Network Logs (C2, Exfil, Firewall, WAF)
+### Section 6: Network Logs (C2, Exfil, Firewall, WAF)
 
-**Why it matters:** Network logs catch what endpoint logs miss. Beaconing, command-and-control callbacks, data exfiltration. Without this week, you'll only see half the attack.
+**Why it matters:** Network logs catch what endpoint logs miss. Beaconing, command-and-control callbacks, data exfiltration. Without this section, you'll only see half the attack.
 
 **What you'll be able to do:**
 - Read firewall and proxy logs
@@ -109,9 +109,9 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Hunt for C2 traffic and exfil in network log data.
 
-### Week 7: Detection Logic (Reading and Writing Rules)
+### Section 7: Detection Logic (Reading and Writing Rules)
 
-**Why it matters:** Junior analysts consume alerts. Senior analysts write them. This week is the bridge between the two. Most courses skip it entirely. That's why most courses don't get people promoted past Tier 1.
+**Why it matters:** Junior analysts consume alerts. Senior analysts write them. This section is the bridge between the two. Most courses skip it entirely. That's why most courses don't get people promoted past Tier 1.
 
 **What you'll be able to do:**
 - Read existing detection rules in Sigma, KQL, or SPL
@@ -121,12 +121,12 @@ Don't skip ahead. Each week assumes the one before it.
 
 **Lab focus:** Write a Sigma rule for a specific attack technique and validate it.
 
-### Week 8: Capstone Investigation
+### Section 8: Capstone Investigation
 
 **Why it matters:** This is where everything comes together. You investigate a full incident on your own and produce a written report. The output isn't just a course completion. It's a portfolio piece you can show in interviews.
 
 **What you'll be able to do:**
-- Run a full investigation independently using everything from Weeks 1-7
+- Run a full investigation independently using everything from Sections 1-7
 - Construct an accurate incident timeline
 - Write a complete incident report with an executive summary and technical findings
 - Present findings the way you would to leadership
@@ -135,7 +135,7 @@ Don't skip ahead. Each week assumes the one before it.
 
 Budget more time for this one. Plan on 6-10 hours.
 
-## After Week 8
+## After Section 8
 
 You'll have:
 
@@ -147,7 +147,7 @@ This is a foundation, not a finish line. But it's the foundation most working SO
 
 ## Tracking Your Progress
 
-The simplest way to track yourself is to commit your completed labs to your own fork of this repo. By the end of Week 8, you'll have a public GitHub portfolio showing eight weeks of hands-on cybersecurity work. That alone makes you stand out in a stack of resumes that all say "studying for Security+."
+The simplest way to track yourself is to commit your completed labs to your own fork of this repo. By the end of Section 8, you'll have a public GitHub portfolio showing eight weeks of hands-on cybersecurity work. That alone makes you stand out in a stack of resumes that all say "studying for Security+."
 
 If GitHub feels like too much overhead at the start, just keep a running log in a single document. The goal is evidence of work, not perfect tooling.
 

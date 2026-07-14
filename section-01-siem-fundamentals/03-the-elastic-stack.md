@@ -78,4 +78,4 @@ You understand the system your logs live in. The next step is getting comfortabl
 
 ---
 
-[← Back to Week 1 Overview](./README.md) | [Next →](./04-tour-of-kibana.md)
+[← Back to Section 1 Overview](./README.md) | [Next →](./04-tour-of-kibana.md)

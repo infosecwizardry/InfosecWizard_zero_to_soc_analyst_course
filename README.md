@@ -6,7 +6,7 @@ This repository holds everything that supports the video course: lesson notes, l
 
 ## 📅 The 8-Week Roadmap
 
-| Week | Topic | What You'll Be Able to Do |
+| Section | Topic | What You'll Be Able to Do |
 |------|-------|---------------------------|
 | 1 | SIEM Fundamentals | Navigate, search, and pivot through a SIEM with confidence |
 | 2 | Windows Logs | Read and triage Windows event logs like a native language |
@@ -19,18 +19,18 @@ This repository holds everything that supports the video course: lesson notes, l
 
 ## 🧙 How to Use This Repo
 
-Each week has its own folder following the same structure:
+Each section has its own folder following the same structure:
 
 - `README.md`: lesson notes, video link, learning objectives, key takeaways
 - `lab.md`: hands-on exercise with step-by-step instructions
 - `resources.md`: links, further reading, referenced tools
 - `assets/`: diagrams, sample logs, screenshots, exports
 
-If you're brand new, start with `00-start-here/` and work straight through Week 1. If you're brushing up on a specific topic, jump to the week you need.
+If you're brand new, start with `00-start-here/` and work straight through Section 1. If you're brushing up on a specific topic, jump to the section you need.
 
 ## 🛠 Before You Start
 
-Head to `00-start-here/prerequisites.md` and `00-start-here/lab-setup.md` for the short list of free accounts and tools you'll need. Plan for about an hour to get your lab environment ready before Week 1.
+Head to `00-start-here/prerequisites.md` and `00-start-here/lab-setup.md` for the short list of free accounts and tools you'll need. Plan for about an hour to get your lab environment ready before Section 1.
 
 ## ▶️ Watch the Course
 
